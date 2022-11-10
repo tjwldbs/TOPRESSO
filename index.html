@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>서지윤_토프레소</title>
+    <link rel="stylesheet" href="서지윤_TOPRESSO.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+      $(function () {
+        $(".btns>button").click(function () {
+          let btn_index = $(this).index();
+          $(".btns>button").removeClass("on");
+          $(this).addClass("on");
+          $(".right>article").removeClass("on");
+          $(".right>article").eq(btn_index).addClass("on");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="wrap">
+      <!-- <section class="floating_menu">
+      <h2 hidden>floating menu banner</h2>
+      <div class="swiper1 slide1">
+        <ul class="swiper-wrapper">
+          <li class="swiper-slide">
+            <div class="inner">
+              <div class="fm_img">
+                <img src="./img/Layer 2.png" alt="fm_img_1" />
+              </div>
+              <p>토프레소 창업문의</p>
+              <a href="#">자세히보기</a>
+            </div>
+          </li>
+          <li class="swiper-slide">
+            <div class="inner">
+              <div class="fm_img">
+                <img src="./img/배너(1).png" alt="fm_img_2" />
+              </div>
+              <a href="#">자세히보기</a>
+            </div>
+          </li>
+          <li class="swiper-slide">
+            <div class="inner">
+              <div class="fm_img">
+                <img src="./img/배너.png" alt="fm_img_3" />
+              </div>
+              <a href="#">자세히보기</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="swiper-button-next next1"></div>
+      <div class="swiper-button-prev prev1"></div>
+      <div class="swiper-pagination pg1"></div>
+    </section>
+    <div class="scroll_down"><i class="fa-solid fa-circle-down"></i></div> -->
+
+      <header class="hd">
+        <nav class="mw">
+          <h1 class="h_logo"></h1>
+          <ul class="gnb">
+            <li>
+              <a href="#">회사소개</a>
+              <ul class="sub">
+                <li><a href="#">회사 소개</a></li>
+                <li><a href="#">토프레소와 나눔</a></li>
+                <li><a href="#">오시는 길</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">커피</a>
+              <ul class="sub">
+                <li><a href="#">당일주문발송</a></li>
+                <li><a href="#">차별화된 로스팅</a></li>
+                <li><a href="#">토프레소 원두</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">메뉴</a>
+              <ul class="sub">
+                <li><a href="#">신메뉴</a></li>
+                <li><a href="#">메뉴 찾기</a></li>
+                <li><a href="#">미네랄 숙성우유</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">창업</a>
+              <ul class="sub">
+                <li><a href="#">개설안내</a></li>
+                <li><a href="#">예상 견적 시스템</a></li>
+                <li><a href="#">창업 Q&A</a></li>
+                <li><a href="#">가맹 문의</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">매장</a>
+              <ul class="sub">
+                <li><a href="#">인테리어</a></li>
+                <li><a href="#">오픈 매장</a></li>
+                <li><a href="#">매장찾기</a></li>
+                <li><a href="#">가맹점 인터뷰</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">소식</a>
+              <ul class="sub">
+                <li><a href="#">토프레소 소식</a></li>
+                <li><a href="#">고객센터</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="h_right">
+            <a href="#" class="login">로그인</a>
+            <a href="#" class="onlinemall">온라인몰</a>
+            <a href="#" class="question">
+              <i class="fa-regular fa-circle-question"></i>
+            </a>
+            <a href="#" class="insta">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#" class="blog">
+              <i class="fa-solid fa-b"></i>
+            </a>
+            <a href="#" class="search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+            <a href="#" class="ham">
+              <i class="fa-solid fa-bars"></i>
+            </a>
+          </div>
+        </nav>
+      </header>
+
+      <section class="sec1">
+        <h2 hidden>menu slide banner</h2>
+        <div class="swiper1 slide1">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+              <div class="inner">
+                <div class="s1_img1">
+                  <img
+                    src="./img/2022-가을-홈페이지-배너.jpg"
+                    alt="sec1_img_1"
+                  />
+                </div>
+                <a href="#">자세히보기</a>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <div class="inner">
+                <div class="s1_img2">
+                  <img
+                    src="./img/달콤 구름라떼 홈페이지 배너(4).jpg"
+                    alt="sec1_img_2"
+                  />
+                </div>
+                <a href="#">자세히보기</a>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <div class="inner">
+                <div class="s1_img3">
+                  <img
+                    src="./img/샌드위치 홈페이지 배너(2).jpg"
+                    alt="sec1_img_3"
+                  />
+                </div>
+                <a href="#">자세히보기</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="swiper-button-next next1"></div>
+        <div class="swiper-button-prev prev1"></div>
+        <div class="swiper-pagination pg1"></div>
+      </section>
+
+      <section class="sec2 mw">
+        <h2 hidden>strength banner</h2>
+        <div class="s2_wrap">
+          <div class="s2_1">
+            <div class="s2_img_1">
+              <img src="./img/9Layer 2.png" alt="sec2_img_1" />
+            </div>
+            <div class="s2_img_text">
+              <p>
+                <span> 더 부드럽게 </span>
+                <span> 더 고소하게 </span>
+                <span> 더 풍미있게 </span>
+              </p>
+              <p>숙성우유 커피 브랜드 1위</p>
+              <p>한 끗 차이로 다름을 만드는 토프레소</p>
+            </div>
+            <a href="#">자세히보기</a>
+          </div>
+          <div class="s2_2">
+            <div class="inner">
+              <p>Daily Order Rostered System</p>
+              <div class="s2_img_2">
+                <img src="./img/8Layer 1.png" alt="sec2_img_2" />
+              </div>
+              <p>당일 주문, 당일 로스팅, 당일 배송</p>
+            </div>
+            <a href="#">자세히보기</a>
+          </div>
+          <div class="s2_3">
+            <div class="s2_img_3">
+              <img src="./img/Layer 3.png" alt="sec2_img_3" />
+            </div>
+            <div class="s2_img_text3">
+              <p>카페인 걱정없이</p>
+              <p>토프레소 디카페인 블렌드</p>
+            </div>
+            <a href="#">자세히보기</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="sec3 mw">
+        <h2>TOPRESSO MD</h2>
+        <div class="sec3_con">
+          <div class="left">
+            <div class="btns">
+              <button class="on">coffee beans</button>
+              <button>others</button>
+            </div>
+          </div>
+          <div class="right">
+            <article class="con1 on">
+              <div class="swiper slide2">
+                <ul class="swiper-wrapper">
+                  <li class="swiper-slide">
+                    <div class="inner">
+                      <div class="s3_img">
+                        <img src="./img/다운로드 (1).png" alt="flag" />
+                        <img src="./img/1Layer 3.png" alt="coffeebean" />
+                        <div class="s3_detail_hover">
+                          <strong>에티오피아 예가체프</strong>
+                          <p>산미 ★★★</p>
+                          <p>바디 ★★★★</p>
+                          <p>단맛 ★★★</p>
+                          <p>쓴맛 ★</p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="inner">
+                      <div class="s3_img">
+                        <img src="./img/다운로드 (2).png" alt="flag" />
+                        <img src="./img/1Layer 3.png" alt="coffeebean" />
+                        <div class="s3_detail_hover">
+                          <strong>인도네시아 만델링</strong>
+                          <p>산미 ★</p>
+                          <p>바디 ★★★★★</p>
+                          <p>단맛 ★★</p>
+                          <p>쓴맛 ★★★</p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="inner">
+                      <div class="s3_img">
+                        <img src="./img/다운로드 (3).png" alt="flag" />
+                        <img src="./img/1Layer 3.png" alt="coffeebean" />
+                        <div class="s3_detail_hover">
+                          <strong>케냐 AA</strong>
+                          <p>산미 ★★★</p>
+                          <p>바디 ★★★★★</p>
+                          <p>단맛 ★★★★</p>
+                          <p>쓴맛 ★★★</p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="inner">
+                      <div class="s3_img">
+                        <img src="./img/다운로드.png" alt="flag" />
+                        <img src="./img/1Layer 3.png" alt="coffeebean" />
+                        <div class="s3_detail_hover">
+                          <strong>과테말라 안티구아</strong>
+                          <p>산미 ★★★</p>
+                          <p>바디 ★★★</p>
+                          <p>단맛 ★★</p>
+                          <p>쓴맛 ★★★★</p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="inner">
+                      <div class="s3_img">
+                        <img src="./img/다운로드 (1).png" alt="flag" />
+                        <img src="./img/1Layer 3.png" alt="coffeebean" />
+                        <div class="s3_detail_hover">
+                          <strong>콜럼비아 수프리모</strong>
+                          <p>산미 ★★★</p>
+                          <p>바디 ★★★</p>
+                          <p>단맛 ★★</p>
+                          <p>쓴맛 ★★★</p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="swiper-button-next next2"></div>
+              <div class="swiper-button-prev prev2"></div>
+            </article>
+            <article class="con2">
+              <div class="swiper slide2">
+                <ul class="swiper-wrapper">
+                  <li class="swiper-slide">
+                    <div class="inner">
+                      <img
+                        src="./img/35611593801428442_1816131380.jpg"
+                        alt=""
+                      />
+                      <a href="">detail</a>
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="inner">
+                      <img src="./img/37043187371385676_869466925.jpg" alt="" />
+                      <a href="">detail</a>
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="inner">
+                      <img
+                        src="./img/37043963290835312_1986634032.jpg"
+                        alt=""
+                      />
+                      <a href="">detail</a>
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="inner">
+                      <img
+                        src="./img/37599963749227899_1105534585.jpg"
+                        alt=""
+                      />
+                      <a href="">detail</a>
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="inner">
+                      <img
+                        src="./img/74102837591133925_1421661678.jpg"
+                        alt=""
+                      />
+                      <a href="">detail</a>
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="inner">
+                      <img
+                        src="./img/22955641543007288_1919498581.jpg"
+                        alt=""
+                      />
+                      <a href="">detail</a>
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="inner">
+                      <img src="./img/24163705108843890_548565447.jpg" alt="" />
+                      <a href="">detail</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="swiper-button-next next2"></div>
+              <div class="swiper-button-prev prev2"></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="sec4">
+        <h2>TOPRESSO SNS</h2>
+        <div class="swiper3 slide3">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+              <div class="inner">
+                <div class="s4_img">
+                  <img
+                    src="./img/307670960_194281632986149_5747987150550115173_n.jpg"
+                    alt="sec4_img_1"
+                  />
+                </div>
+                <a href="#">자세히보기</a>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <div class="inner">
+                <div class="s4_img">
+                  <img
+                    src="./img/308668566_970800587647061_3873630777584216546_n.jpg"
+                    alt="sec4_img_2"
+                  />
+                </div>
+                <a href="#">자세히보기</a>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <div class="inner">
+                <div class="s4_img">
+                  <img
+                    src="./img/308692044_448931363723441_5986077647588107849_n.jpg"
+                    alt="sec4_img_3"
+                  />
+                </div>
+                <a href="#">자세히보기</a>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <div class="inner">
+                <div class="s4_img">
+                  <img
+                    src="./img/309901247_3127324500930948_3459164972045980314_n.jpg"
+                    alt="sec4_img_4"
+                  />
+                </div>
+                <a href="#">자세히보기</a>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <div class="inner">
+                <div class="s4_img">
+                  <img
+                    src="./img/309908063_8162107020497793_5040961620889759916_n.jpg"
+                    alt="sec4_img_5"
+                  />
+                </div>
+                <a href="#">자세히보기</a>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <div class="inner">
+                <div class="s4_img">
+                  <img
+                    src="./img/310441545_1141735373430330_9049134709319086699_n.jpg"
+                    alt="sec4_img_6"
+                  />
+                </div>
+                <a href="#">자세히보기</a>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <div class="inner">
+                <div class="s4_img">
+                  <img
+                    src="./img/310699581_483953076990540_286109195816439207_n.jpg"
+                    alt="sec4_img_7"
+                  />
+                </div>
+                <a href="#">자세히보기</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <footer>
+        <div class="inner mw">
+          <h1 class="f_logo"></h1>
+          <div class="f_a_con">
+            <a href="#">오시는 길</a>
+            <a href="#">가맹문의</a>
+            <a href="#">채용문의</a>
+            <a href="#">고객의소리</a>
+            <a href="#">제휴문의</a>
+          </div>
+          <p class="c_info">
+            업체명 : (주)에스앤큐플러스 / 주소 : 서울시 서초구 매헌로6길 55 3층
+            대표이사 : 오종환 사업자번호 : 106-86-88346 / 전화 : 1688-9519
+          </p>
+          <div class="f_icon_con">
+            <p class="copyright">
+              Copyright (C) 2016 TOPRESSO. All right reserved
+            </p>
+            <div class="f_icons">
+              <a href="#"><img src="" alt="f_icon_1" /></a>
+              <a href="#"><img src="" alt="f_icon_2" /></a>
+              <a href="#"><img src="" alt="f_icon_3" /></a>
+              <a href="#"><img src="" alt="f_icon_4" /></a>
+              <a href="#"><img src="" alt="f_icon_5" /></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <script>
+        var swiper1 = new Swiper(".slide1", {
+          navigation: {
+            nextEl: ".next1",
+            prevEl: ".prev1",
+          },
+          pagination: {
+            el: ".pg1",
+          },
+          slidesPerView: 1,
+          centeredSlides: true,
+          spaceBetween: 0,
+        });
+        var swiper2 = new Swiper(".slide2", {
+          navigation: {
+            nextEl: ".next2",
+            prevEl: ".prev2",
+          },
+          slidesPerView: "4",
+          spaceBetween: 10,
+        });
+        var swiper22 = new Swiper(".slide22", {
+          navigation: {
+            nextEl: ".next22",
+            prevEl: ".prev22",
+          },
+          slidesPerView: "4",
+          spaceBetween: 30,
+        });
+        var swiper3 = new Swiper(".slide3", {
+          slidesPerView: 7,
+          spaceBetween: 0,
+          autoplay: {
+            delay: 1000,
+            disableOnInteraction: false,
+          },
+        });
+      </script>
+    </div>
+  </body>
+</html>
